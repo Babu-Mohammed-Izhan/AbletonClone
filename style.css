@@ -88,3 +88,31 @@ li {
   height: 0;
   border-top: 2px solid #eee;
 }
+
+.page-about {
+  margin-top: 20px;
+  margin-left: 8.33333vw;
+  margin-right: 8.33333vw;
+  margin-bottom: 8.33333vw;
+  position: relative;
+  min-height: 100vh;
+  min-height: calc(100vh - 120px);
+}
+
+.bg-hero {
+  min-height: calc(100vh - 120px);
+}
+
+.ableton-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 700px) {
+  .ableton-logo {
+    width: 215px;
+    height: 53px;
+  }
+}
