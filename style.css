@@ -12,6 +12,10 @@ h1 {
 p {
   margin-bottom: 0.7em;
 }
+a {
+  text-decoration: none;
+  color: blue;
+}
 
 /*  Navbar  */
 
@@ -26,6 +30,7 @@ nav {
   padding-top: 1.25rem;
   padding-bottom: 0;
   overflow: visible;
+  min-height: 60px;
 }
 
 li {
@@ -64,7 +69,7 @@ li {
   align-items: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1050px) {
   .links-list {
     display: none;
   }
@@ -193,6 +198,10 @@ li {
   width: 60%;
 }
 
+.footer_main {
+  padding-top: 5rem;
+}
+
 .footer__container {
   padding-left: 8.33333vw;
   padding-right: 8.33333vw;
@@ -204,7 +213,7 @@ li {
   margin-bottom: 8vh;
 }
 .footer__col {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .newsletter {
@@ -279,19 +288,48 @@ li {
   background-color: #f77737;
 }
 
-.footer__link-list {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .footer__link-list__item {
   font-weight: bold;
   text-decoration: none;
   color: black;
+  margin: 0px 20px 0px 0px;
 }
 
 .footer__secondary__signature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 5rem 0px 5rem 0px;
+}
+
+.footer__secondary__signature__label {
+  padding: 0px 10px 0px 10px;
+}
+
+.footer__row {
+  display: grid;
+  /* this is the same as grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+  /* this is the same as grid-template-rows: 300px 300px; */
+}
+
+.footer__row_2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+  .footer__link-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer__row {
+    display: grid;
+    /* this is the same as grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: 1fr;
+    /* this is the same as grid-template-rows: 300px 300px; */
+  }
 }
