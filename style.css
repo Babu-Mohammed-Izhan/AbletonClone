@@ -94,12 +94,12 @@ li {
   margin-left: 8.33333vw;
   margin-right: 8.33333vw;
   margin-bottom: 8.33333vw;
-  position: relative;
   min-height: 100vh;
   min-height: calc(100vh - 120px);
 }
 
 .bg-hero {
+  position: relative;
   min-height: calc(100vh - 120px);
 }
 
