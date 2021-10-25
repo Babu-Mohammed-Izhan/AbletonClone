@@ -193,13 +193,88 @@ li {
   width: 60%;
 }
 
-.main-footer__container {
+.footer__container {
   padding-left: 8.33333vw;
   padding-right: 8.33333vw;
 }
 
-.main-footer__basics__logo {
+.footer__basics__logo {
   max-width: 100px;
   max-height: 100px;
   margin-bottom: 8vh;
+}
+.footer__col {
+  padding-bottom: 50px;
+}
+
+.newsletter {
+  display: flex;
+  margin-top: 10px;
+}
+
+.email {
+  font-size: inherit;
+  width: 100%;
+  margin: 0;
+  padding: 0.4em 0.75em;
+  background: transparent;
+  background-color: #eee;
+  border: 0;
+  user-select: none;
+  font-weight: normal;
+  border-radius: 0;
+}
+
+.signup-btn {
+  display: inline-block;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0.35em 2em;
+  font-weight: bold;
+  color: #fff !important;
+  background: blue;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.footer__has-arrow {
+  color: black;
+  text-decoration: none;
+}
+
+.footer__social {
+  display: flex;
+}
+
+.footer__social-button {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.625rem;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.625rem;
+}
+
+.footer__social-button--facebook {
+  background-color: #3477f2;
+}
+
+.footer__social-button--twitter {
+  background-color: #1da1f2;
+}
+
+.footer__social-button--youtube {
+  background-color: #ff001d;
+}
+
+.footer__social-button--instagram {
+  background-color: #f77737;
 }
