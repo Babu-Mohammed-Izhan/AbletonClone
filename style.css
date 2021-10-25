@@ -188,7 +188,18 @@ li {
 }
 
 .imgix-fluid-2 {
-  margin-left: 20rem;
+  margin-left: 25vw;
   height: 60%;
   width: 60%;
+}
+
+.main-footer__container {
+  padding-left: 8.33333vw;
+  padding-right: 8.33333vw;
+}
+
+.main-footer__basics__logo {
+  max-width: 100px;
+  max-height: 100px;
+  margin-bottom: 8vh;
 }
