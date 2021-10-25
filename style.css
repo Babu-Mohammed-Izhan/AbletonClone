@@ -9,7 +9,13 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 5rem;
+}
+
+.navbar {
+  position: relative;
+  padding-top: 1.25rem;
+  padding-bottom: 0;
+  overflow: visible;
 }
 
 li {
@@ -30,17 +36,55 @@ li {
 }
 
 .logo {
-  margin: 0px 2em 1.25em 2em;
+  position: absolute;
+  top: 1.25rem;
+  left: 0;
+  margin: 0px 1.5em 1.25em 2em;
 }
 
 .links-list {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  width: 100%;
+  padding-right: 1.25rem;
+  height: 1.75rem;
+  padding-left: 7.5rem;
+  font-weight: bold;
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+
+.link,
+.live-for-free,
+.login-reg {
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  margin-right: 0.3125rem;
+  margin-left: 0.3125rem;
+}
+
+.link-coral {
+  color: coral;
 }
 
 .login {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.live-for-free {
+  margin-right: 0;
+  margin-left: auto;
+  color: blue;
+}
+
+.login-reg {
+  font-size: 1.1rem;
+}
+
+.nav-seperator {
+  display: block;
+  height: 0;
+  border-top: 2px solid #eee;
 }
