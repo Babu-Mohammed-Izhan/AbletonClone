@@ -161,11 +161,14 @@ li {
 }
 
 .images {
-  margin-left: 8.33333vw;
-  margin-right: 8.33333vw;
   width: auto;
   margin-bottom: 8.33333vw;
   object-fit: cover;
+}
+
+.graph-image {
+  width: 80%;
+  margin: auto;
 }
 
 .imgix-fluid {
@@ -199,6 +202,10 @@ li {
   position: relative;
   position: 50% 50%;
 }
+.youtube-video {
+  width: 80%;
+  margin: auto;
+}
 
 .imgix-fluid-2 {
   margin-left: 25vw;
@@ -206,37 +213,50 @@ li {
   width: 60%;
 }
 
-.page-about__collage {
+.page-about__collage--people {
   position: relative;
-  height: 50vw;
+  padding: 8vw;
 }
 
 .bg-spearmint {
   position: absolute;
   width: 58.33333vw;
   height: 100%;
+  left: 0;
+  top: 0;
   background-color: rgb(158, 255, 113);
+  z-index: -1;
 }
 
 .page-about__collage__container {
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  position: relative;
   height: 100%;
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.page-about__collage__container2 {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .bg-spearmint-image1 {
+  margin-bottom: 2rem;
   width: 100%;
+  height: 20vw;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   background-image: url("https://ableton-production.imgix.net/about/photo-3.jpg?dpr=2.63&amp;fit=crop&amp;h=279&amp;ixjsv=1.1.3&amp;q=38&amp;w=372");
 }
 .bg-spearmint-image2 {
+  margin-top: 2rem;
   width: 100%;
+  height: 20vw;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -245,6 +265,9 @@ li {
 
 .bg-spearmint-image3 {
   width: 100%;
+  height: 80%;
+  margin: auto;
+  margin-left: 10vw;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -254,6 +277,10 @@ li {
 .page-about__collage--improving {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  position: relative;
+  width: 66.66667vw;
+  height: 58.33333vw;
+  left: 16.66667vw;
 }
 
 .bg-lavender {
@@ -264,6 +291,8 @@ li {
 }
 
 .page-about__jobs-teaser {
+  width: 80%;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 60% 40%;
@@ -281,15 +310,30 @@ li {
 
 .bg-periwinkle {
   background-color: rgb(184, 194, 253);
+  padding: 8vw;
 }
 
 .page-about__jobs-teaser__text {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0px 5rem;
 }
 
+.body-text {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media (max-width: 650px) {
+  .body-text {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 380px) {
+  .body-text {
+    font-size: 0.5rem;
+  }
+}
 /* Footer */
 
 .footer_main {
