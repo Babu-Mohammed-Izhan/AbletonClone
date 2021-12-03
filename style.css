@@ -14,7 +14,6 @@ p {
 }
 a {
   text-decoration: none;
-  color: blue;
 }
 
 /*  Navbar  */
@@ -77,14 +76,20 @@ li {
 
 .link,
 .live-for-free,
-.login-reg {
+.login-reg > a {
   padding-right: 0.625rem;
   padding-left: 0.625rem;
   margin-right: 0.3125rem;
   margin-left: 0.3125rem;
 }
 
-.link-coral {
+.link,
+.live-for-free,
+.login-reg > a:visited {
+  color: black;
+}
+
+.link-coral > a {
   color: coral;
 }
 
@@ -97,10 +102,13 @@ li {
 .live-for-free {
   margin-right: 0;
   margin-left: auto;
+}
+
+.live-for-free > a {
   color: blue;
 }
 
-.login-reg {
+.login-reg > a {
   font-size: 1.1rem;
 }
 
@@ -197,6 +205,92 @@ li {
   height: 60%;
   width: 60%;
 }
+
+.page-about__collage {
+  position: relative;
+  height: 50vw;
+}
+
+.bg-spearmint {
+  position: absolute;
+  width: 58.33333vw;
+  height: 100%;
+  background-color: rgb(158, 255, 113);
+}
+
+.page-about__collage__container {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.bg-spearmint-image1 {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("https://ableton-production.imgix.net/about/photo-3.jpg?dpr=2.63&amp;fit=crop&amp;h=279&amp;ixjsv=1.1.3&amp;q=38&amp;w=372");
+}
+.bg-spearmint-image2 {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("https://ableton-production.imgix.net/about/photo-4.jpg?dpr=2.63&amp;fit=crop&amp;h=278&amp;ixjsv=1.1.3&amp;q=38&amp;w=372");
+}
+
+.bg-spearmint-image3 {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("https://ableton-production.imgix.net/about/photo-5.jpg?dpr=2.63&amp;fit=crop&amp;h=464&amp;ixjsv=1.1.3&amp;q=38&amp;w=465");
+}
+
+.page-about__collage--improving {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bg-lavender {
+  position: absolute;
+  background-color: lavender;
+  width: 100%;
+  height: 100%;
+}
+
+.page-about__jobs-teaser {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60% 40%;
+  height: 70vw;
+}
+
+.page-about__jobs-teaser-img1 {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("https://ableton-production.imgix.net/about/photo-8.jpg?crop=right&amp;dpr=2.63&amp;fit=crop&amp;h=558&amp;ixjsv=1.1.3&amp;q=38&amp;w=929");
+}
+
+.bg-periwinkle {
+  background-color: rgb(184, 194, 253);
+}
+
+.page-about__jobs-teaser__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 5rem;
+}
+
+/* Footer */
 
 .footer_main {
   padding-top: 5rem;
